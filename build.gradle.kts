@@ -248,7 +248,7 @@ repositories {
 
     maven {
         name = "placeholderapi"
-        url = uri("https://repo.extendedclip.com/content/repositories/placeholderapi/")
+        url = uri("https://repo.extendedclip.com/releases/")
     }
 
     maven {
@@ -263,7 +263,7 @@ repositories {
 
     maven {
         name = "paper"
-        url = uri("https://papermc.io/repo/repository/maven-public/")
+        url = uri("https://repo.papermc.io/repository/maven-public/")
     }
 
     maven { url = uri("https://jitpack.io") }
@@ -281,7 +281,7 @@ dependencies {
     implementation(group = "com.destroystokyo.paper", name = "paper-api", version = "1.16.5-R0.1-SNAPSHOT")
 
     implementation(group = "be.maximvdw", name = "MVdWPlaceholderAPI", version = "3.0.1-SNAPSHOT") { isTransitive = false }
-    implementation(group = "me.clip", name = "placeholderapi", version = "2.11.1")
+    implementation(group = "me.clip", name = "placeholderapi", version = "2.11.6")
     implementation(group = "net.milkbowl.vault", name = "VaultAPI", version = "1.7") { isTransitive = false }
     implementation(group = "net.ess3", name = "EssentialsX", version = "2.17.1") { isTransitive = false }
     implementation(group = "com.github.LeonMangler", name = "SuperVanish", version = "6.2.6-2") { isTransitive = false }
