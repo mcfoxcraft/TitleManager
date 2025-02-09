@@ -201,6 +201,8 @@ class PlayerListServiceSpigot @Inject constructor(
     override fun clearHeaderAndFooterCache(player: Player) {
         player.removeTitleManagerMetadata(headerMetadataKey)
         player.removeTitleManagerMetadata(footerMetadataKey)
+        removeRunningHeaderAnimation(player)
+        removeRunningFooterAnimation(player)
     }
 
     private fun setRunningAnimation(player: Player, path: String, animation: SendableAnimation) {
